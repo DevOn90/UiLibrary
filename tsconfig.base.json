@@ -15,7 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@ui-library/button1": ["libs/UiComponents/src/index.ts"]
+      "@ui-library/button": ["libs/UiComponents/buttons/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
