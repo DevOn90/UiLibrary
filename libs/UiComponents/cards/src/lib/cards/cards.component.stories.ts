@@ -11,14 +11,15 @@ const meta: Meta<CardsComponent> = {
 export default meta;
 type Story = StoryObj<CardsComponent>;
 
-export const Primary: Story = {
-  args: {},
+// Example user data
+const userData = {
+  name: 'John Doe',
+  email: 'john.doe@example.com',
+  avatarUrl: 'https://i.pravatar.cc/60?img=5', // Placeholder image
 };
 
-export const Heading: Story = {
-  args: {},
-  play: async ({ canvasElement }) => {
-    const canvas = within(canvasElement);
-    expect(canvas.getByText(/cards works!/gi)).toBeTruthy();
+export const Primary: Story = {
+  args: {
+    user: userData,
   },
 };
