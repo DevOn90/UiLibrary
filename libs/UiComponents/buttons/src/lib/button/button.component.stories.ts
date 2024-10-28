@@ -11,20 +11,17 @@ const meta: Meta<ButtonComponent> = {
 export default meta;
 type Story = StoryObj<ButtonComponent>;
 
-export const Primary: Story = {
+export const ButtonRed: Story = {
   args: {
-    label: '',
-    color: '',
+    label: 'Button Red',
+    color: 'red',
   },
 };
 
-export const Heading: Story = {
+export const ButtonBlue: Story = {
   args: {
-    label: '',
-    color: '',
-  },
-  play: async ({ canvasElement }) => {
-    const canvas = within(canvasElement);
-    expect(canvas.getByText(/button works!/gi)).toBeTruthy();
+    label: 'Button Blue',
+    color: 'blue',
   },
 };
+
