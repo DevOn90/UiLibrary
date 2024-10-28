@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -8,4 +8,7 @@ import { CommonModule } from '@angular/common';
   templateUrl: './button1.component.html',
   styleUrl: './button1.component.css',
 })
-export class Button1Component {}
+export class Button1Component {
+  @Input() label = 'button1';
+  @Input() color = 'red'; 
+}
