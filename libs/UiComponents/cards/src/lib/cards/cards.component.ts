@@ -1,5 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
+
+interface User {
+  name: string;
+  email: string;
+  avatarUrl: string;
+}
 
 @Component({
   selector: 'lib-cards',
@@ -8,4 +14,6 @@ import { CommonModule } from '@angular/common';
   templateUrl: './cards.component.html',
   styleUrl: './cards.component.css',
 })
-export class CardsComponent {}
+export class CardsComponent {
+  @Input() user!: User;
+}
