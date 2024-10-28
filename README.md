@@ -8,7 +8,7 @@
 
 ## Run tasks
 
-To run the dev server for your app, use:
+To run the dev server for your app, use:hg
 
 ```sh
 npx nx serve test
