@@ -6,22 +6,34 @@ import { expect } from '@storybook/jest';
 
 const meta: Meta<ButtonComponent> = {
   component: ButtonComponent,
-  title: 'ButtonComponent',
+  title: 'Components/Button',
+  tags: ['autodocs'],
+  argTypes: {
+    backgroundColor: { control: 'color' },
+    size: { control: 'select', options: ['small', 'medium', 'large'] },
+    primary: { control: 'boolean' },
+  },
 };
 export default meta;
 type Story = StoryObj<ButtonComponent>;
 
-export const ButtonRed: Story = {
+// Primary Button
+export const PrimaryButton: Story = {
   args: {
-    label: 'Button Red',
-    color: 'red',
+    primary: true,
+    label: 'Primary Button',
+    backgroundColor: '#1e90ff',
+    size: 'medium',
   },
 };
 
-export const ButtonBlue: Story = {
+// Secondary Button
+export const SecondaryButton: Story = {
   args: {
-    label: 'Button Blue',
-    color: 'blue',
+    primary: false,
+    label: 'Secondary Button',
+    backgroundColor: '#ff6347',
+    size: 'medium',
   },
 };
 
