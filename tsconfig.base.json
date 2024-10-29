@@ -16,7 +16,8 @@
     "baseUrl": ".",
     "paths": {
       "@ui-library/button": ["libs/UiComponents/buttons/src/index.ts"],
-      "@ui-library/cards": ["libs/UiComponents/cards/src/index.ts"]
+      "@ui-library/cards": ["libs/UiComponents/cards/src/index.ts"],
+      "@ui-library/ui-library": ["libs/UiComponents/ui-library/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
