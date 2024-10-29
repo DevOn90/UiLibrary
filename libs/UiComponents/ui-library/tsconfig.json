@@ -9,7 +9,16 @@
     "noFallthroughCasesInSwitch": true
   },
   "files": [],
-  "include": [],
+  "include": [
+    //"src/**/*.ts",
+    //"src/**/*.html",
+    //"src/**/*.css",
+    "../../cards/src/lib/**/*.stories.ts",
+    "../../buttons/src/lib/**/*.stories.ts"
+  ],
+  "exclude": [
+    "**/*.spec.ts"
+  ],
   "references": [
     {
       "path": "./tsconfig.lib.json"
